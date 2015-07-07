@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_BUKCollectionFlowView_Example_BUKCollectionFlowView : NSObject
+@end
+@implementation PodsDummy_Pods_BUKCollectionFlowView_Example_BUKCollectionFlowView
+@end

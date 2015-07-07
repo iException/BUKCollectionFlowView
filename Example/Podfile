@@ -8,8 +8,4 @@ end
 target 'BUKCollectionFlowView_Tests', :exclusive => true do
   pod "BUKCollectionFlowView", :path => "../"
 
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
 end

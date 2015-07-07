@@ -1,0 +1,6 @@
+framework module BUKCollectionFlowView {
+  umbrella header "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h"
+
+  export *
+  module * { export * }
+}

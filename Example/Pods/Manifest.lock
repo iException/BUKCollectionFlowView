@@ -1,0 +1,14 @@
+PODS:
+  - BUKCollectionFlowView (0.1.0)
+
+DEPENDENCIES:
+  - BUKCollectionFlowView (from `../`)
+
+EXTERNAL SOURCES:
+  BUKCollectionFlowView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BUKCollectionFlowView: b81bb9e0017a8cc09c53e69152d6efad13763524
+
+COCOAPODS: 0.37.2

@@ -7,7 +7,10 @@
 //
 
 @import UIKit;
+#import "BUKCollectionFlowView.h"
 
 @interface BUKViewController : UIViewController
+
+@property (nonatomic, strong) BUKCollectionFlowView *collectionFlowView;
 
 @end
