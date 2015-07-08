@@ -37,7 +37,7 @@
     
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        self.contents = [content copy];
+        _contents = [content copy];
     }
     
     return self;
@@ -92,6 +92,10 @@
         preCell = firstCell;
         widthSum = [self cellSizeForIndex:0].width;
     }
+    if ( _contents == nil || [_contents count]==0 )
+    {
+        return;
+    }
     [_contents enumerateObjectsUsingBlock:^(NSString *tag, NSUInteger idx, BOOL *stop) {
         BUKCollectionFlowViewCell *cell;
         CGSize size;
@@ -106,7 +110,7 @@
         [self addSubview:cell];
         if ( widthSum+_lineSpacing+size.width > _width )
         {
-            CGFloat celly = preCell.frame.origin.y + preCell.frame.size.height + _interitemSpacing;
+            CGFloat celly = preCell ? preCell.frame.origin.y + preCell.frame.size.height + _interitemSpacing : 0;
             cell.frame = CGRectMake(0, celly, size.width, size.height);
             widthSum = size.width;
         } else {
