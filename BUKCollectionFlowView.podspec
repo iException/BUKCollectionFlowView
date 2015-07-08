@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BUKCollectionFlowView"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "a custom collection flow view"
   s.description      = "a custom collection flow view, usually used for show tags"
   s.homepage         = "https://github.com/iException/BUKCollectionFlowView"
