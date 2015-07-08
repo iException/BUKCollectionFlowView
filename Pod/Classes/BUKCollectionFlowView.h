@@ -44,6 +44,7 @@ typedef enum {
 
 - (void)showCertainLines:(NSInteger)numberOfLines showMore:(BOOL)showMore moreTag:(NSString *)moreTag;
 
+//return 0 when width is not initialized or shorter than one tag
 - (CGFloat)getHeight;
 
 - (void)addItem:(NSString *)content;

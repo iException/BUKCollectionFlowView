@@ -330,7 +330,7 @@
     NSInteger count = 0;
     CGFloat widthSum = 0;
     NSInteger lineCount = 0;
-    while (true)
+    while ( _width && _width>=[self cellSizeForIndex:count].width )
     {
         lineCount++;
         widthSum = 0;
@@ -351,6 +351,7 @@
             return lineCount;
         }
     }
+    return 0;
 }
 
 - (id)safeObjectAtIndexInContents:(NSUInteger)index
