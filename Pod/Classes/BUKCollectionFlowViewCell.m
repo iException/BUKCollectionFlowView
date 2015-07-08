@@ -72,6 +72,16 @@
     }
 }
 
+#pragma mark - private methods -
+
+- (UIImage *)imageNamed:(NSString *)imageName
+{
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *assetPath = [bundle pathForResource:[NSString stringWithFormat:@"BUKCollectionFlowView.bundle/%@",imageName] ofType:@"png"];
+    UIImage *asset = [UIImage imageWithContentsOfFile:assetPath];
+    return asset;
+}
+
 #pragma mark - getter & setter
 
 - (UILabel *)label
@@ -92,7 +102,7 @@
         _deleteButton = [[UIButton alloc] init];
         _deleteButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_deleteButton addTarget:self action:@selector(deleteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-        [_deleteButton setImage:[UIImage imageNamed:@"tag_delete"] forState:UIControlStateNormal];
+        [_deleteButton setImage:[self imageNamed:@"tag_delete"] forState:UIControlStateNormal];
     }
     return _deleteButton;
 }
@@ -104,7 +114,7 @@
         _addButton = [[UIButton alloc] init];
         _addButton.translatesAutoresizingMaskIntoConstraints = NO;
         _addButton.userInteractionEnabled = NO;
-        [_addButton setImage:[UIImage imageNamed:@"tag_add"] forState:UIControlStateNormal];
+        [_addButton setImage:[self imageNamed:@"tag_add"] forState:UIControlStateNormal];
     }
     return _addButton;
 }

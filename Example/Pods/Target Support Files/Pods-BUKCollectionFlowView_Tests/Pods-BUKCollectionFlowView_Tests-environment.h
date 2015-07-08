@@ -8,7 +8,7 @@
 
 // BUKCollectionFlowView
 #define COCOAPODS_POD_AVAILABLE_BUKCollectionFlowView
-#define COCOAPODS_VERSION_MAJOR_BUKCollectionFlowView 0
-#define COCOAPODS_VERSION_MINOR_BUKCollectionFlowView 1
-#define COCOAPODS_VERSION_PATCH_BUKCollectionFlowView 0
+#define COCOAPODS_VERSION_MAJOR_BUKCollectionFlowView 1
+#define COCOAPODS_VERSION_MINOR_BUKCollectionFlowView 0
+#define COCOAPODS_VERSION_PATCH_BUKCollectionFlowView 1
 

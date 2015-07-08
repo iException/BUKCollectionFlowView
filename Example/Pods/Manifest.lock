@@ -1,5 +1,5 @@
 PODS:
-  - BUKCollectionFlowView (0.1.0)
+  - BUKCollectionFlowView (1.0.1)
 
 DEPENDENCIES:
   - BUKCollectionFlowView (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BUKCollectionFlowView: 779adff76ffad8091391a2254fe205608a698788
+  BUKCollectionFlowView: 9eb23a213eb79977c401fcd224887852447a8cab
 
 COCOAPODS: 0.37.2

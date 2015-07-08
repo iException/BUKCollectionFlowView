@@ -1,6 +1,6 @@
 {
   "name": "BUKCollectionFlowView",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "summary": "a custom collection flow view",
   "description": "a custom collection flow view, usually used for show tags",
   "homepage": "https://github.com/iException/BUKCollectionFlowView",
@@ -10,13 +10,13 @@
   },
   "source": {
     "git": "https://github.com/iException/BUKCollectionFlowView.git",
-    "tag": "0.1.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "Pod/Classes/*.{h,m}",
   "resource_bundles": {
     "BUKCollectionFlowView": [
       "Pod/Assets/*.png"
