@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BUKCollectionFlowView: b81bb9e0017a8cc09c53e69152d6efad13763524
+  BUKCollectionFlowView: 779adff76ffad8091391a2254fe205608a698788
 
 COCOAPODS: 0.37.2

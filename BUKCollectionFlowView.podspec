@@ -9,19 +9,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "BUKCollectionFlowView"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of BUKCollectionFlowView."
-  s.description      = <<-DESC
-                       An optional longer description of BUKCollectionFlowView
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BUKCollectionFlowView"
+  s.version          = "1.0.0"
+  s.summary          = "a custom collection flow view"
+  s.description      = "a custom collection flow view, usually used for show tags"
+  s.homepage         = "https://github.com/iException/BUKCollectionFlowView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "huhuhumian" => "1152715@tongji.edu.cn" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BUKCollectionFlowView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/iException/BUKCollectionFlowView.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'

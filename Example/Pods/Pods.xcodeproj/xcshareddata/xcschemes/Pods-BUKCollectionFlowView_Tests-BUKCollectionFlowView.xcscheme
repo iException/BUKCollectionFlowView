@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2463069CFD8C568D57423BC3"
+               BlueprintIdentifier = "7A51CD7B52C5A3EFCDDF1B6E"
                BuildableName = "BUKCollectionFlowView.framework"
                BlueprintName = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView"
                ReferencedContainer = "container:Pods.xcodeproj">

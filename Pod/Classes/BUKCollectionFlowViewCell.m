@@ -54,12 +54,6 @@
     }
 }
 
-- (void)setDeleteIcon:(UIImage *)deleteIcon addIcon:(UIImage *)addIcon
-{
-    self.deleteIcon = deleteIcon;
-    self.addIcon = addIcon;
-}
-
 - (void)prepareForReuse
 {
     for (UIView *subView in self.subviews)
@@ -74,7 +68,7 @@
 {
     if (self.deleteAction)
     {
-        self.deleteAction(self.indexPath);
+        self.deleteAction(self.index);
     }
 }
 
@@ -98,6 +92,7 @@
         _deleteButton = [[UIButton alloc] init];
         _deleteButton.translatesAutoresizingMaskIntoConstraints = NO;
         [_deleteButton addTarget:self action:@selector(deleteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_deleteButton setImage:[UIImage imageNamed:@"tag_delete"] forState:UIControlStateNormal];
     }
     return _deleteButton;
 }
@@ -109,6 +104,7 @@
         _addButton = [[UIButton alloc] init];
         _addButton.translatesAutoresizingMaskIntoConstraints = NO;
         _addButton.userInteractionEnabled = NO;
+        [_addButton setImage:[UIImage imageNamed:@"tag_add"] forState:UIControlStateNormal];
     }
     return _addButton;
 }

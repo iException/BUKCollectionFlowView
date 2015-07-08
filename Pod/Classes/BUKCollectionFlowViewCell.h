@@ -16,7 +16,7 @@ typedef enum {
 
 @interface BUKCollectionFlowViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) NSIndexPath *indexPath;
+@property (nonatomic, assign) NSInteger index;
 
 @property (nonatomic, strong) UILabel *label;
 
@@ -28,7 +28,7 @@ typedef enum {
 
 @property (nonatomic, strong) UIImage *addIcon;
 
-@property (copy, nonatomic) void (^deleteAction)(NSIndexPath *indexPath);
+@property (copy, nonatomic) void (^deleteAction)(NSInteger index);
 
 - (void)fillWithContent:(NSString *)content cellType:(BUKCollectionFlowViewCellType)type;
 

@@ -7,441 +7,437 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013B2B0EDE4E697F56FAA4E6 /* BUKCollectionFlowViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E630F076C53BF8685C94415F /* BUKCollectionFlowViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05A53D1E3D8C385DE86493BD /* BUKCollectionFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545A7A7822025FB3ED538B1 /* BUKCollectionFlowViewCell.m */; };
-		0BA4E8FB920B0F2045E62771 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DA9A97D3A42E13057B50CC /* Foundation.framework */; };
-		10821CEF28A6A8075E9EF2D1 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C73790DA59BD395DA6ABF /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m */; };
-		17CBED508BE2BA9694DC27F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DA9A97D3A42E13057B50CC /* Foundation.framework */; };
-		17E7FB2BE4DD08F839814710 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B81659A0A521F185CC8629 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18E32E1E2CFCEB5915DE0F6F /* BUKCollectionFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC726B2DF8DCA8A36A0913A /* BUKCollectionFlowView.m */; };
-		1D21F58CDBF56B0CBC2D60D3 /* BUKCollectionFlowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83ED89A3350B711D4052E1E0 /* BUKCollectionFlowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37F295B39A748BAF46B1E2D5 /* BUKCollectionFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545A7A7822025FB3ED538B1 /* BUKCollectionFlowViewCell.m */; };
-		48502CB73B7A291B931DBECE /* BUKCollectionFlowView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 350034D72A7E0293EFB833FB /* BUKCollectionFlowView.bundle */; };
-		5E1332B1FE9AA7B932BD1A0A /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5716CFE2A631CF5D4BCB /* BUKLeftAlignedCollectionViewFlowLayout.m */; };
-		6CE267080AE3E63EE8B16059 /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5716CFE2A631CF5D4BCB /* BUKLeftAlignedCollectionViewFlowLayout.m */; };
-		7131515131D7C9544FCAD0B0 /* BUKCollectionFlowViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E630F076C53BF8685C94415F /* BUKCollectionFlowViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85C88BD109716AF6253608E9 /* Pods-BUKCollectionFlowView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EAC2EB0567417D9D7E7265 /* Pods-BUKCollectionFlowView_Example-dummy.m */; };
-		9EF8ACBA1581F6FA94B36F1E /* BUKCollectionFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC726B2DF8DCA8A36A0913A /* BUKCollectionFlowView.m */; };
-		A499E1160646A2B9B9A3E89A /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 861089D6ED3A9E2CB633E010 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m */; };
-		AE04EB7FC58BE1BA2D685674 /* Pods-BUKCollectionFlowView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 364884A52C9577B1710285D8 /* Pods-BUKCollectionFlowView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7AE37C73895E78793765EC1 /* BUKCollectionFlowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83ED89A3350B711D4052E1E0 /* BUKCollectionFlowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBBEA20398842FBB9166A1A8 /* Pods-BUKCollectionFlowView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5ADB194244D1DA19046845 /* Pods-BUKCollectionFlowView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFB287E3C0B99AAC73A6E673 /* Pods-BUKCollectionFlowView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5603921AA2770C88CB1C230 /* Pods-BUKCollectionFlowView_Tests-dummy.m */; };
-		E03C1EAA360681007DC85DEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DA9A97D3A42E13057B50CC /* Foundation.framework */; };
-		E04F4CE8BF670397941ED539 /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9711DF5D76D5FB2FE205B0 /* BUKLeftAlignedCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E77D335852F92CE11F23164C /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 856D6DEB14504AFCBB52C59F /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAE7DC935A5FF3D394AAB5D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DA9A97D3A42E13057B50CC /* Foundation.framework */; };
-		F50416C8D8EA0E20CBFCF9FC /* BUKCollectionFlowView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E04586098E543E1194C736CC /* BUKCollectionFlowView.bundle */; };
-		FB11FA48D59F937CC12E5203 /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9711DF5D76D5FB2FE205B0 /* BUKLeftAlignedCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		081A0B8FE79DEAEDE97B472E /* Pods-BUKCollectionFlowView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602E2E37E0303C34BFC4919 /* Pods-BUKCollectionFlowView_Example-dummy.m */; };
+		0D4A72BC33C8C9F832FE2EA8 /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8A9D580C8E7EE8829135C /* BUKLeftAlignedCollectionViewFlowLayout.m */; };
+		158D332CDE0CA738B6DFFC43 /* chat_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBCDE9BF3DCBF206C49662 /* chat_more.png */; };
+		22C53E9FF6C9047497A8D29B /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D1805F00A3D1EFB84A6D8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FFC74F3A362DB7006252B62 /* tag_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 269F336DDD6DB0445C3256C0 /* tag_delete.png */; };
+		3891621F0479F6670C88F933 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E218B3B580C0AF1F4D2198A /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m */; };
+		4A9C27924ACF8D9F59DB505B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51B83B42ADCA0C170893F8B /* Foundation.framework */; };
+		57E7FD29D959080F00C2BDF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51B83B42ADCA0C170893F8B /* Foundation.framework */; };
+		5E465F673B5FC4FE4FFB67FC /* BUKCollectionFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882C9B63D3D23B1C665A267 /* BUKCollectionFlowViewCell.m */; };
+		766878FE50BC414FF373B3FE /* BUKCollectionFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA2E9D3CDEB75109B7CEAA /* BUKCollectionFlowView.m */; };
+		81CEABCB7EC554E0BF8517AC /* BUKCollectionFlowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA1A726676BB01D2571423F /* BUKCollectionFlowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		880E6E523ECE360261418468 /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 77E37978FAC8624C7ABBE75B /* BUKLeftAlignedCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BB392090D87BC068DE0AC63 /* BUKCollectionFlowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA1A726676BB01D2571423F /* BUKCollectionFlowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E38C9FA0BFAE57E0CFE1266 /* tag_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 269F336DDD6DB0445C3256C0 /* tag_delete.png */; };
+		997617D6F25014846C08EAF7 /* Pods-BUKCollectionFlowView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0C7609444A246761326440 /* Pods-BUKCollectionFlowView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E26620BECDBA7C6FEEA16BC /* BUKCollectionFlowView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0EAD4D6AF53328706576E20C /* BUKCollectionFlowView.bundle */; };
+		A62979C8B3CDA4ACC693E277 /* BUKCollectionFlowViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C6B6404240D6234C243A39 /* BUKCollectionFlowViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACA6970CDA3AC990F529CEBA /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 77E37978FAC8624C7ABBE75B /* BUKLeftAlignedCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8AF43B96EDC211FCA0966E8 /* BUKCollectionFlowViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C6B6404240D6234C243A39 /* BUKCollectionFlowViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB00993B57B51E94458CAC73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51B83B42ADCA0C170893F8B /* Foundation.framework */; };
+		BB397AB836EF2C985FCFF7D5 /* Pods-BUKCollectionFlowView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 925AAE55B480A39DCEB91751 /* Pods-BUKCollectionFlowView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEC93E185B53697601CC1645 /* BUKCollectionFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA2E9D3CDEB75109B7CEAA /* BUKCollectionFlowView.m */; };
+		CC0399430D326DC3FD6C0A72 /* BUKCollectionFlowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1882C9B63D3D23B1C665A267 /* BUKCollectionFlowViewCell.m */; };
+		CCAE563A879E2864F8030427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51B83B42ADCA0C170893F8B /* Foundation.framework */; };
+		D45735B9677C05AFC6CF4F81 /* BUKCollectionFlowView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22A36041D0ADAFF555487F60 /* BUKCollectionFlowView.bundle */; };
+		D4B76612E9F2BC6138590079 /* Pods-BUKCollectionFlowView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37336B4B04670A5C7F522B52 /* Pods-BUKCollectionFlowView_Tests-dummy.m */; };
+		D5AD1A1F6EEF4AEC2FFB2380 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7352A9AB0A67A6CF85EBFBD2 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8AB8AC75A593A3312A856F /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E39C3CE356F054E81589A086 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m */; };
+		E1B1556DD5369F3BAA160571 /* chat_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EBBCDE9BF3DCBF206C49662 /* chat_more.png */; };
+		F1D0B0BE234A324B863D98F8 /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8A9D580C8E7EE8829135C /* BUKLeftAlignedCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6B4DFE30863649A60228370D /* PBXContainerItemProxy */ = {
+		34274EA38EFC7FEDFD0982E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEE4E68771AE099F3E932B1C /* Project object */;
+			containerPortal = A10D20825FC0C4EB953385BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 889736C1F6F99D6D970ADF09;
-			remoteInfo = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
-		};
-		92B10D67DD8C9D23C2F91B55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEE4E68771AE099F3E932B1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E623D5DE54F424783E281BCB;
+			remoteGlobalIDString = EBC2EA495A78DCE3A642D6BB;
 			remoteInfo = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView";
 		};
-		D3D1ED975985095D46FADBAB /* PBXContainerItemProxy */ = {
+		6C0A1582DBE96D95D203255F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEE4E68771AE099F3E932B1C /* Project object */;
+			containerPortal = A10D20825FC0C4EB953385BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C9BDA3BB929F3E02820B7823;
-			remoteInfo = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView";
+			remoteGlobalIDString = 8F756E20DC1AFB905AB52678;
+			remoteInfo = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
 		};
-		DED39CFBC9D9D27CB96CED90 /* PBXContainerItemProxy */ = {
+		C39433B6CEFC68F4758E76AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEE4E68771AE099F3E932B1C /* Project object */;
+			containerPortal = A10D20825FC0C4EB953385BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2463069CFD8C568D57423BC3;
+			remoteGlobalIDString = 7A51CD7B52C5A3EFCDDF1B6E;
 			remoteInfo = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView";
+		};
+		E751D4452C4FE9145190E356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10D20825FC0C4EB953385BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF70E18850E5CD61E269345;
+			remoteInfo = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		024D4C5196BDFDD471CE9BC2 /* Pods-BUKCollectionFlowView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BUKCollectionFlowView_Tests.modulemap"; sourceTree = "<group>"; };
-		02A1BF4633BC717DE83878A9 /* Pods-BUKCollectionFlowView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		109386530E06CCA1E6647B33 /* Pods-BUKCollectionFlowView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BUKCollectionFlowView_Example.modulemap"; sourceTree = "<group>"; };
-		11505FF0BA2CE30CB8DE2124 /* Pods-BUKCollectionFlowView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Example-resources.sh"; sourceTree = "<group>"; };
-		1B12FB0B1088779A836DABE0 /* Pods-BUKCollectionFlowView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Tests-resources.sh"; sourceTree = "<group>"; };
-		2545A7A7822025FB3ED538B1 /* BUKCollectionFlowViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BUKCollectionFlowViewCell.m; sourceTree = "<group>"; };
-		25EAC2EB0567417D9D7E7265 /* Pods-BUKCollectionFlowView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BUKCollectionFlowView_Example-dummy.m"; sourceTree = "<group>"; };
-		350034D72A7E0293EFB833FB /* BUKCollectionFlowView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUKCollectionFlowView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		364884A52C9577B1710285D8 /* Pods-BUKCollectionFlowView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		38CD955437386E2D6EC71BD1 /* Pods-BUKCollectionFlowView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BUKCollectionFlowView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A9711DF5D76D5FB2FE205B0 /* BUKLeftAlignedCollectionViewFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BUKLeftAlignedCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		67D47E38215A3DF692370D2C /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig"; sourceTree = "<group>"; };
-		6F5ADB194244D1DA19046845 /* Pods-BUKCollectionFlowView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-umbrella.h"; sourceTree = "<group>"; };
-		74CCA49FE8146678EDA23181 /* Pods-BUKCollectionFlowView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BUKCollectionFlowView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		75AA38739917974CF40AC52C /* Pods-BUKCollectionFlowView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7B166E5A17E5417F289EAF76 /* Pods-BUKCollectionFlowView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		83ED89A3350B711D4052E1E0 /* BUKCollectionFlowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BUKCollectionFlowView.h; sourceTree = "<group>"; };
-		856D6DEB14504AFCBB52C59F /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h"; sourceTree = "<group>"; };
-		861089D6ED3A9E2CB633E010 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m"; sourceTree = "<group>"; };
-		87841B63EF76AE6C7D054E94 /* Pods-BUKCollectionFlowView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		89651409DC243B6013512005 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch"; sourceTree = "<group>"; };
-		93C7102BA30B8F7FB728D563 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig"; sourceTree = "<group>"; };
-		950E09DB1D865DF278489E00 /* Pods-BUKCollectionFlowView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		960FC4A21BE730497DBCC9C3 /* Pods-BUKCollectionFlowView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-environment.h"; sourceTree = "<group>"; };
-		96DA9A97D3A42E13057B50CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9A68D97CFF52B4862F9BF6B4 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap"; sourceTree = "<group>"; };
-		9B8AF80D405FD9C843407A39 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch"; sourceTree = "<group>"; };
-		9C9C73790DA59BD395DA6ABF /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m"; sourceTree = "<group>"; };
-		A1C149ED8FDFC53EB15785DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3B81659A0A521F185CC8629 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h"; sourceTree = "<group>"; };
-		AB1754E76567156D5254B860 /* Pods-BUKCollectionFlowView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BUKCollectionFlowView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		AEC726B2DF8DCA8A36A0913A /* BUKCollectionFlowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BUKCollectionFlowView.m; sourceTree = "<group>"; };
-		B34D5BCE3D7215307D9C890C /* Pods_BUKCollectionFlowView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BUKCollectionFlowView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA358449C3C8B2D563971E51 /* BUKCollectionFlowView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BUKCollectionFlowView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCE7F92366922E291D3CC1D0 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.xcconfig"; sourceTree = "<group>"; };
-		BFACD647CC658033EE108E98 /* Pods-BUKCollectionFlowView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Tests-environment.h"; sourceTree = "<group>"; };
-		C09D480672533715964E5A83 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap"; sourceTree = "<group>"; };
-		C0A87642EDA298FCE25224B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Info.plist"; sourceTree = "<group>"; };
-		C3605DF93C82FEF717350182 /* BUKCollectionFlowView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BUKCollectionFlowView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA7912E49BC50D48AD34725C /* Pods-BUKCollectionFlowView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CEBF5716CFE2A631CF5D4BCB /* BUKLeftAlignedCollectionViewFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BUKLeftAlignedCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		D5603921AA2770C88CB1C230 /* Pods-BUKCollectionFlowView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BUKCollectionFlowView_Tests-dummy.m"; sourceTree = "<group>"; };
-		DE8748BAAF7BBF889446B7ED /* Pods-BUKCollectionFlowView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BUKCollectionFlowView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E04586098E543E1194C736CC /* BUKCollectionFlowView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUKCollectionFlowView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43DAF713F8D24BA45B6403A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E630F076C53BF8685C94415F /* BUKCollectionFlowViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BUKCollectionFlowViewCell.h; sourceTree = "<group>"; };
-		EE45ECF487E75360A38BF0B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE60920ECC31CC8FFADC1763 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig"; sourceTree = "<group>"; };
-		F2E00B2FC8F765B64D8A60D2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F46E99786F91883B80E5104C /* Pods_BUKCollectionFlowView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BUKCollectionFlowView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		051EDAF6DA8FE76E52F6DE77 /* Pods-BUKCollectionFlowView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BUKCollectionFlowView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0BA1A726676BB01D2571423F /* BUKCollectionFlowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BUKCollectionFlowView.h; sourceTree = "<group>"; };
+		0EAD4D6AF53328706576E20C /* BUKCollectionFlowView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUKCollectionFlowView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB813F1518B5ECA7C758F93 /* Pods-BUKCollectionFlowView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Tests-resources.sh"; sourceTree = "<group>"; };
+		0EBBCDE9BF3DCBF206C49662 /* chat_more.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chat_more.png; sourceTree = "<group>"; };
+		1882C9B63D3D23B1C665A267 /* BUKCollectionFlowViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BUKCollectionFlowViewCell.m; sourceTree = "<group>"; };
+		22A36041D0ADAFF555487F60 /* BUKCollectionFlowView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BUKCollectionFlowView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		269F336DDD6DB0445C3256C0 /* tag_delete.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = tag_delete.png; sourceTree = "<group>"; };
+		2E218B3B580C0AF1F4D2198A /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m"; sourceTree = "<group>"; };
+		2EAE90E4AE54657B3DC7D31B /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.xcconfig"; sourceTree = "<group>"; };
+		2F0DD8D22252DEC2A2AD98FD /* Pods_BUKCollectionFlowView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BUKCollectionFlowView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37336B4B04670A5C7F522B52 /* Pods-BUKCollectionFlowView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BUKCollectionFlowView_Tests-dummy.m"; sourceTree = "<group>"; };
+		3EC690F5DC76175E59639772 /* Pods_BUKCollectionFlowView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BUKCollectionFlowView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4602E2E37E0303C34BFC4919 /* Pods-BUKCollectionFlowView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BUKCollectionFlowView_Example-dummy.m"; sourceTree = "<group>"; };
+		4A12AD86D9756046BABCC6B4 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4B89A3B75053216B284847BA /* BUKCollectionFlowView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BUKCollectionFlowView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61BC512DF7FD1E4E085A9F43 /* Pods-BUKCollectionFlowView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BUKCollectionFlowView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6253E037BDA7E22072AF1C10 /* Pods-BUKCollectionFlowView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6588C85BC34D5E502E2D2B04 /* Pods-BUKCollectionFlowView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BUKCollectionFlowView_Example.modulemap"; sourceTree = "<group>"; };
+		66AA2E9D3CDEB75109B7CEAA /* BUKCollectionFlowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BUKCollectionFlowView.m; sourceTree = "<group>"; };
+		6AF8A9D580C8E7EE8829135C /* BUKLeftAlignedCollectionViewFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BUKLeftAlignedCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		7352A9AB0A67A6CF85EBFBD2 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h"; sourceTree = "<group>"; };
+		738739EDE1FAD87FA52C6E3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74EE4590A77C9870D3EF23C5 /* Pods-BUKCollectionFlowView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		77E37978FAC8624C7ABBE75B /* BUKLeftAlignedCollectionViewFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BUKLeftAlignedCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		7A0033AD2E7695EE0E0CCCA8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig"; sourceTree = "<group>"; };
+		8B0C7609444A246761326440 /* Pods-BUKCollectionFlowView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-umbrella.h"; sourceTree = "<group>"; };
+		925AAE55B480A39DCEB91751 /* Pods-BUKCollectionFlowView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		92B802D3F6BA680C7CB53C79 /* Pods-BUKCollectionFlowView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Example-resources.sh"; sourceTree = "<group>"; };
+		97459A7B349A9452CDABF81A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28476C097821B2E3E9EE548 /* Pods-BUKCollectionFlowView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BUKCollectionFlowView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A8CEBCB5AA85D41406B4758E /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch"; sourceTree = "<group>"; };
+		A9C6B6404240D6234C243A39 /* BUKCollectionFlowViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BUKCollectionFlowViewCell.h; sourceTree = "<group>"; };
+		AB1966B95D04204D4F794851 /* Pods-BUKCollectionFlowView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BUKCollectionFlowView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE2A2AC315490D3F2FF79877 /* Pods-BUKCollectionFlowView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B1ECDBF8DB62853B69375370 /* Pods-BUKCollectionFlowView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BA45DDCFB11AAD88F45E2F50 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig"; sourceTree = "<group>"; };
+		BC0D1805F00A3D1EFB84A6D8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h"; sourceTree = "<group>"; };
+		C3745ADE02AAF4D32886B2F9 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap"; sourceTree = "<group>"; };
+		C6996730C2AE2BC04BF1F755 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Info.plist"; sourceTree = "<group>"; };
+		C7D4A1D244FCBF7D4B27014B /* BUKCollectionFlowView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BUKCollectionFlowView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8971D6F326F71F3A39334DF /* Pods-BUKCollectionFlowView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BUKCollectionFlowView_Tests.modulemap"; sourceTree = "<group>"; };
+		CEF32FE7E13896BDD5B31836 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig"; sourceTree = "<group>"; };
+		D51B83B42ADCA0C170893F8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D60901C0F813E54F07D39A57 /* Pods-BUKCollectionFlowView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BUKCollectionFlowView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		DE7210E2B60AA663B284CA32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39C3CE356F054E81589A086 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m"; sourceTree = "<group>"; };
+		EF8942D6DEE2B39AD0045A12 /* Pods-BUKCollectionFlowView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BUKCollectionFlowView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EF8DC07921961E92660E073E /* Pods-BUKCollectionFlowView_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Example-environment.h"; sourceTree = "<group>"; };
+		F1654B919546036DC6C7A79C /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch"; path = "../Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch"; sourceTree = "<group>"; };
+		F7BAB2620EC53E3F679D95CB /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap"; sourceTree = "<group>"; };
+		FE89B23F9CBD563795151379 /* Pods-BUKCollectionFlowView_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BUKCollectionFlowView_Tests-environment.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E98AA8DB3E6C6FA30E9DE95 /* Frameworks */ = {
+		062C4EE868E902B1E575B39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00993B57B51E94458CAC73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3184423BA07F1EA60067264C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E7FD29D959080F00C2BDF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3184BF78137272C54061E98D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73280542DC53924337A9DCA1 /* Frameworks */ = {
+		5C6484CB4087F09A1C52320D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9C27924ACF8D9F59DB505B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EDD19764469C7E12CC69F9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7711D4E75AE3BAA6552584B1 /* Frameworks */ = {
+		B95768766A7E5DC9F7F46AA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03C1EAA360681007DC85DEA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A3F3EDA94F49F286BC21EEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BA4E8FB920B0F2045E62771 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2BBACA28368E21CB5241EDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAE7DC935A5FF3D394AAB5D5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE68C2EFEC13679D86532E0D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17CBED508BE2BA9694DC27F5 /* Foundation.framework in Frameworks */,
+				CCAE563A879E2864F8030427 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0777E13D050FD0CB7D13392C /* Support Files */ = {
+		046F4EDE6E289B7CF75CDD00 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E43DAF713F8D24BA45B6403A /* Info.plist */,
-				C0A87642EDA298FCE25224B7 /* Info.plist */,
-				9A68D97CFF52B4862F9BF6B4 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap */,
-				BCE7F92366922E291D3CC1D0 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.xcconfig */,
-				67D47E38215A3DF692370D2C /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */,
-				9C9C73790DA59BD395DA6ABF /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m */,
-				89651409DC243B6013512005 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch */,
-				A3B81659A0A521F185CC8629 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h */,
-				C09D480672533715964E5A83 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap */,
-				EE60920ECC31CC8FFADC1763 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig */,
-				93C7102BA30B8F7FB728D563 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */,
-				861089D6ED3A9E2CB633E010 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m */,
-				9B8AF80D405FD9C843407A39 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch */,
-				856D6DEB14504AFCBB52C59F /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h */,
+				ED463B2E2DDDABD91DE2C03A /* Pods-BUKCollectionFlowView_Example */,
+				0BE006104831F4BB80AABC10 /* Pods-BUKCollectionFlowView_Tests */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1130DF41C0E91C9CEF54CC5E /* iOS */ = {
+		0BE006104831F4BB80AABC10 /* Pods-BUKCollectionFlowView_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				96DA9A97D3A42E13057B50CC /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		1650BA731CDDEF443F6A1B7A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B443186B09D55440C6196EB7 /* BUKCollectionFlowView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		464E5A945C0E2657852A1A7D /* Pods-BUKCollectionFlowView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				EE45ECF487E75360A38BF0B0 /* Info.plist */,
-				024D4C5196BDFDD471CE9BC2 /* Pods-BUKCollectionFlowView_Tests.modulemap */,
-				DE8748BAAF7BBF889446B7ED /* Pods-BUKCollectionFlowView_Tests-acknowledgements.markdown */,
-				74CCA49FE8146678EDA23181 /* Pods-BUKCollectionFlowView_Tests-acknowledgements.plist */,
-				D5603921AA2770C88CB1C230 /* Pods-BUKCollectionFlowView_Tests-dummy.m */,
-				BFACD647CC658033EE108E98 /* Pods-BUKCollectionFlowView_Tests-environment.h */,
-				87841B63EF76AE6C7D054E94 /* Pods-BUKCollectionFlowView_Tests-frameworks.sh */,
-				1B12FB0B1088779A836DABE0 /* Pods-BUKCollectionFlowView_Tests-resources.sh */,
-				364884A52C9577B1710285D8 /* Pods-BUKCollectionFlowView_Tests-umbrella.h */,
-				7B166E5A17E5417F289EAF76 /* Pods-BUKCollectionFlowView_Tests.debug.xcconfig */,
-				950E09DB1D865DF278489E00 /* Pods-BUKCollectionFlowView_Tests.release.xcconfig */,
+				97459A7B349A9452CDABF81A /* Info.plist */,
+				C8971D6F326F71F3A39334DF /* Pods-BUKCollectionFlowView_Tests.modulemap */,
+				AB1966B95D04204D4F794851 /* Pods-BUKCollectionFlowView_Tests-acknowledgements.markdown */,
+				A28476C097821B2E3E9EE548 /* Pods-BUKCollectionFlowView_Tests-acknowledgements.plist */,
+				37336B4B04670A5C7F522B52 /* Pods-BUKCollectionFlowView_Tests-dummy.m */,
+				FE89B23F9CBD563795151379 /* Pods-BUKCollectionFlowView_Tests-environment.h */,
+				D60901C0F813E54F07D39A57 /* Pods-BUKCollectionFlowView_Tests-frameworks.sh */,
+				0EB813F1518B5ECA7C758F93 /* Pods-BUKCollectionFlowView_Tests-resources.sh */,
+				925AAE55B480A39DCEB91751 /* Pods-BUKCollectionFlowView_Tests-umbrella.h */,
+				74EE4590A77C9870D3EF23C5 /* Pods-BUKCollectionFlowView_Tests.debug.xcconfig */,
+				EF8942D6DEE2B39AD0045A12 /* Pods-BUKCollectionFlowView_Tests.release.xcconfig */,
 			);
 			name = "Pods-BUKCollectionFlowView_Tests";
 			path = "Target Support Files/Pods-BUKCollectionFlowView_Tests";
 			sourceTree = "<group>";
 		};
-		537291F3068CD3CC5EFB4DA2 /* Products */ = {
+		3D7668A1E5742713DB0AF04D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				350034D72A7E0293EFB833FB /* BUKCollectionFlowView.bundle */,
-				E04586098E543E1194C736CC /* BUKCollectionFlowView.bundle */,
-				BA358449C3C8B2D563971E51 /* BUKCollectionFlowView.framework */,
-				C3605DF93C82FEF717350182 /* BUKCollectionFlowView.framework */,
-				B34D5BCE3D7215307D9C890C /* Pods_BUKCollectionFlowView_Example.framework */,
-				F46E99786F91883B80E5104C /* Pods_BUKCollectionFlowView_Tests.framework */,
+				0EBBCDE9BF3DCBF206C49662 /* chat_more.png */,
+				269F336DDD6DB0445C3256C0 /* tag_delete.png */,
 			);
-			name = Products;
+			path = Assets;
 			sourceTree = "<group>";
 		};
-		568A4ED0CD5DAA6650CB5A8F /* Pods-BUKCollectionFlowView_Example */ = {
+		3F07E101CE3BBCE6B3F8C44F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A1C149ED8FDFC53EB15785DF /* Info.plist */,
-				109386530E06CCA1E6647B33 /* Pods-BUKCollectionFlowView_Example.modulemap */,
-				38CD955437386E2D6EC71BD1 /* Pods-BUKCollectionFlowView_Example-acknowledgements.markdown */,
-				AB1754E76567156D5254B860 /* Pods-BUKCollectionFlowView_Example-acknowledgements.plist */,
-				25EAC2EB0567417D9D7E7265 /* Pods-BUKCollectionFlowView_Example-dummy.m */,
-				960FC4A21BE730497DBCC9C3 /* Pods-BUKCollectionFlowView_Example-environment.h */,
-				CA7912E49BC50D48AD34725C /* Pods-BUKCollectionFlowView_Example-frameworks.sh */,
-				11505FF0BA2CE30CB8DE2124 /* Pods-BUKCollectionFlowView_Example-resources.sh */,
-				6F5ADB194244D1DA19046845 /* Pods-BUKCollectionFlowView_Example-umbrella.h */,
-				02A1BF4633BC717DE83878A9 /* Pods-BUKCollectionFlowView_Example.debug.xcconfig */,
-				75AA38739917974CF40AC52C /* Pods-BUKCollectionFlowView_Example.release.xcconfig */,
+				8B0DE9FB253BDF597EA701BE /* BUKCollectionFlowView */,
 			);
-			name = "Pods-BUKCollectionFlowView_Example";
-			path = "Target Support Files/Pods-BUKCollectionFlowView_Example";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		862EA930C0699E8CF3283991 = {
+		7253DCBA862E395C7462D28D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F2E00B2FC8F765B64D8A60D2 /* Podfile */,
-				1650BA731CDDEF443F6A1B7A /* Development Pods */,
-				A7C4250F8AD15F632AD25AD1 /* Frameworks */,
-				537291F3068CD3CC5EFB4DA2 /* Products */,
-				C1B8331A4C5C82310EF5B6BC /* Targets Support Files */,
+				738739EDE1FAD87FA52C6E3E /* Info.plist */,
+				C6996730C2AE2BC04BF1F755 /* Info.plist */,
+				F7BAB2620EC53E3F679D95CB /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap */,
+				2EAE90E4AE54657B3DC7D31B /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.xcconfig */,
+				7A0033AD2E7695EE0E0CCCA8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */,
+				E39C3CE356F054E81589A086 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m */,
+				A8CEBCB5AA85D41406B4758E /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch */,
+				BC0D1805F00A3D1EFB84A6D8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h */,
+				C3745ADE02AAF4D32886B2F9 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap */,
+				CEF32FE7E13896BDD5B31836 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.xcconfig */,
+				BA45DDCFB11AAD88F45E2F50 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */,
+				2E218B3B580C0AF1F4D2198A /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m */,
+				F1654B919546036DC6C7A79C /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch */,
+				7352A9AB0A67A6CF85EBFBD2 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h */,
 			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
 			sourceTree = "<group>";
 		};
-		976B02F57C48A8A2707D962E /* Classes */ = {
+		8109E40F5E5D1075C1111127 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				83ED89A3350B711D4052E1E0 /* BUKCollectionFlowView.h */,
-				AEC726B2DF8DCA8A36A0913A /* BUKCollectionFlowView.m */,
-				E630F076C53BF8685C94415F /* BUKCollectionFlowViewCell.h */,
-				2545A7A7822025FB3ED538B1 /* BUKCollectionFlowViewCell.m */,
-				4A9711DF5D76D5FB2FE205B0 /* BUKLeftAlignedCollectionViewFlowLayout.h */,
-				CEBF5716CFE2A631CF5D4BCB /* BUKLeftAlignedCollectionViewFlowLayout.m */,
+				957410F340CEA1629E1B3169 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		83D88540F5EFC762A6BDC417 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0BA1A726676BB01D2571423F /* BUKCollectionFlowView.h */,
+				66AA2E9D3CDEB75109B7CEAA /* BUKCollectionFlowView.m */,
+				A9C6B6404240D6234C243A39 /* BUKCollectionFlowViewCell.h */,
+				1882C9B63D3D23B1C665A267 /* BUKCollectionFlowViewCell.m */,
+				77E37978FAC8624C7ABBE75B /* BUKLeftAlignedCollectionViewFlowLayout.h */,
+				6AF8A9D580C8E7EE8829135C /* BUKLeftAlignedCollectionViewFlowLayout.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		9CD8D30CBC1A2AC32CBB4A33 /* Pod */ = {
+		8B0DE9FB253BDF597EA701BE /* BUKCollectionFlowView */ = {
 			isa = PBXGroup;
 			children = (
-				976B02F57C48A8A2707D962E /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		A7C4250F8AD15F632AD25AD1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1130DF41C0E91C9CEF54CC5E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B443186B09D55440C6196EB7 /* BUKCollectionFlowView */ = {
-			isa = PBXGroup;
-			children = (
-				9CD8D30CBC1A2AC32CBB4A33 /* Pod */,
-				0777E13D050FD0CB7D13392C /* Support Files */,
+				F9CDE52804E3D6E5D00982B8 /* Pod */,
+				8109E40F5E5D1075C1111127 /* Resources */,
+				7253DCBA862E395C7462D28D /* Support Files */,
 			);
 			name = BUKCollectionFlowView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C1B8331A4C5C82310EF5B6BC /* Targets Support Files */ = {
+		8B5024579A416F60F2ACA343 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				568A4ED0CD5DAA6650CB5A8F /* Pods-BUKCollectionFlowView_Example */,
-				464E5A945C0E2657852A1A7D /* Pods-BUKCollectionFlowView_Tests */,
+				22A36041D0ADAFF555487F60 /* BUKCollectionFlowView.bundle */,
+				0EAD4D6AF53328706576E20C /* BUKCollectionFlowView.bundle */,
+				4B89A3B75053216B284847BA /* BUKCollectionFlowView.framework */,
+				C7D4A1D244FCBF7D4B27014B /* BUKCollectionFlowView.framework */,
+				3EC690F5DC76175E59639772 /* Pods_BUKCollectionFlowView_Example.framework */,
+				2F0DD8D22252DEC2A2AD98FD /* Pods_BUKCollectionFlowView_Tests.framework */,
 			);
-			name = "Targets Support Files";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		940809A808581E1718CA4E7D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D51B83B42ADCA0C170893F8B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		957410F340CEA1629E1B3169 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3D7668A1E5742713DB0AF04D /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		9C81271273206A88ECC167EA = {
+			isa = PBXGroup;
+			children = (
+				4A12AD86D9756046BABCC6B4 /* Podfile */,
+				3F07E101CE3BBCE6B3F8C44F /* Development Pods */,
+				9F301C2325F26C238EC4E995 /* Frameworks */,
+				8B5024579A416F60F2ACA343 /* Products */,
+				046F4EDE6E289B7CF75CDD00 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F301C2325F26C238EC4E995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940809A808581E1718CA4E7D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED463B2E2DDDABD91DE2C03A /* Pods-BUKCollectionFlowView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DE7210E2B60AA663B284CA32 /* Info.plist */,
+				6588C85BC34D5E502E2D2B04 /* Pods-BUKCollectionFlowView_Example.modulemap */,
+				051EDAF6DA8FE76E52F6DE77 /* Pods-BUKCollectionFlowView_Example-acknowledgements.markdown */,
+				61BC512DF7FD1E4E085A9F43 /* Pods-BUKCollectionFlowView_Example-acknowledgements.plist */,
+				4602E2E37E0303C34BFC4919 /* Pods-BUKCollectionFlowView_Example-dummy.m */,
+				EF8DC07921961E92660E073E /* Pods-BUKCollectionFlowView_Example-environment.h */,
+				B1ECDBF8DB62853B69375370 /* Pods-BUKCollectionFlowView_Example-frameworks.sh */,
+				92B802D3F6BA680C7CB53C79 /* Pods-BUKCollectionFlowView_Example-resources.sh */,
+				8B0C7609444A246761326440 /* Pods-BUKCollectionFlowView_Example-umbrella.h */,
+				AE2A2AC315490D3F2FF79877 /* Pods-BUKCollectionFlowView_Example.debug.xcconfig */,
+				6253E037BDA7E22072AF1C10 /* Pods-BUKCollectionFlowView_Example.release.xcconfig */,
+			);
+			name = "Pods-BUKCollectionFlowView_Example";
+			path = "Target Support Files/Pods-BUKCollectionFlowView_Example";
+			sourceTree = "<group>";
+		};
+		F9CDE52804E3D6E5D00982B8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				83D88540F5EFC762A6BDC417 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A5639E0E587BE519DCFE59B /* Headers */ = {
+		518255258E0A735306C9F7A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7AE37C73895E78793765EC1 /* BUKCollectionFlowView.h in Headers */,
-				013B2B0EDE4E697F56FAA4E6 /* BUKCollectionFlowViewCell.h in Headers */,
-				E04F4CE8BF670397941ED539 /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */,
-				17E7FB2BE4DD08F839814710 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h in Headers */,
+				8BB392090D87BC068DE0AC63 /* BUKCollectionFlowView.h in Headers */,
+				B8AF43B96EDC211FCA0966E8 /* BUKCollectionFlowViewCell.h in Headers */,
+				ACA6970CDA3AC990F529CEBA /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */,
+				D5AD1A1F6EEF4AEC2FFB2380 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A3DDABE61F89A76DCB20E75 /* Headers */ = {
+		6331320DE4A8C4E16205451D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBEA20398842FBB9166A1A8 /* Pods-BUKCollectionFlowView_Example-umbrella.h in Headers */,
+				997617D6F25014846C08EAF7 /* Pods-BUKCollectionFlowView_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89A0CE6643C832B1B63F1126 /* Headers */ = {
+		BBCC1DA3D1FA0FA191DBF3AE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE04EB7FC58BE1BA2D685674 /* Pods-BUKCollectionFlowView_Tests-umbrella.h in Headers */,
+				BB397AB836EF2C985FCFF7D5 /* Pods-BUKCollectionFlowView_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC72BE5BA54D8CC80B41C864 /* Headers */ = {
+		C5BA229A3D74C3069AFCC696 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D21F58CDBF56B0CBC2D60D3 /* BUKCollectionFlowView.h in Headers */,
-				7131515131D7C9544FCAD0B0 /* BUKCollectionFlowViewCell.h in Headers */,
-				FB11FA48D59F937CC12E5203 /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */,
-				E77D335852F92CE11F23164C /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-umbrella.h in Headers */,
+				81CEABCB7EC554E0BF8517AC /* BUKCollectionFlowView.h in Headers */,
+				A62979C8B3CDA4ACC693E277 /* BUKCollectionFlowViewCell.h in Headers */,
+				880E6E523ECE360261418468 /* BUKLeftAlignedCollectionViewFlowLayout.h in Headers */,
+				22C53E9FF6C9047497A8D29B /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2463069CFD8C568D57423BC3 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView */ = {
+		7A51CD7B52C5A3EFCDDF1B6E /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EAE4C4D7D70380E0968F558 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView" */;
+			buildConfigurationList = AF390DF8C52E77F09EC948C6 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView" */;
 			buildPhases = (
-				46B5E631A27DA80CB775459B /* Sources */,
-				A2BBACA28368E21CB5241EDF /* Frameworks */,
-				1F21344C4BBB77ACA91695E0 /* Resources */,
-				AC72BE5BA54D8CC80B41C864 /* Headers */,
+				386A59CA8A1E38B3351FBC2F /* Sources */,
+				062C4EE868E902B1E575B39B /* Frameworks */,
+				9DE6DF4C3C89E05EDB442ED2 /* Resources */,
+				518255258E0A735306C9F7A2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EF3F79863202C35A7A9262EF /* PBXTargetDependency */,
+				944873B90B96984F27ACF64C /* PBXTargetDependency */,
 			);
 			name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView";
 			productName = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView";
-			productReference = C3605DF93C82FEF717350182 /* BUKCollectionFlowView.framework */;
+			productReference = C7D4A1D244FCBF7D4B27014B /* BUKCollectionFlowView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		889736C1F6F99D6D970ADF09 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView */ = {
+		8F756E20DC1AFB905AB52678 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19527B0A158B2A7793916E67 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView" */;
+			buildConfigurationList = 2F5699202920D26DC85C4A13 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView" */;
 			buildPhases = (
-				6BAD82156BF5D9FB47985E5C /* Sources */,
-				AE68C2EFEC13679D86532E0D /* Frameworks */,
-				61051479101EE03E96D60FC2 /* Resources */,
-				0A5639E0E587BE519DCFE59B /* Headers */,
+				92384227464E267AFC85AFB1 /* Sources */,
+				3184423BA07F1EA60067264C /* Frameworks */,
+				9CAA8B876FE68CA7F2C9E943 /* Resources */,
+				C5BA229A3D74C3069AFCC696 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2978E71EB707709DCBA7B80C /* PBXTargetDependency */,
+				DCB459BB93CFBFB29A7FE076 /* PBXTargetDependency */,
 			);
 			name = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
 			productName = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
-			productReference = BA358449C3C8B2D563971E51 /* BUKCollectionFlowView.framework */;
+			productReference = 4B89A3B75053216B284847BA /* BUKCollectionFlowView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A114EE0ABFD8F596E3723CFC /* Pods-BUKCollectionFlowView_Example */ = {
+		BBF70E18850E5CD61E269345 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE05449DAFDC527A15FBD767 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example" */;
+			buildConfigurationList = 78FEBA37934BFE6CD16BF8E6 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView" */;
 			buildPhases = (
-				C79DDB48E2114DBC15C8F1AE /* Sources */,
-				8A3F3EDA94F49F286BC21EEB /* Frameworks */,
-				3A3DDABE61F89A76DCB20E75 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F4FD1A9DCEE07567A8F6880 /* PBXTargetDependency */,
-			);
-			name = "Pods-BUKCollectionFlowView_Example";
-			productName = "Pods-BUKCollectionFlowView_Example";
-			productReference = B34D5BCE3D7215307D9C890C /* Pods_BUKCollectionFlowView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C6B57AD346165F9CB85EC3B8 /* Pods-BUKCollectionFlowView_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 432AA01A5031BA9D685DAB8F /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests" */;
-			buildPhases = (
-				02E5FAD1E902B68B4DB49E84 /* Sources */,
-				7711D4E75AE3BAA6552584B1 /* Frameworks */,
-				89A0CE6643C832B1B63F1126 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9670AF6E944F0829E3356C61 /* PBXTargetDependency */,
-			);
-			name = "Pods-BUKCollectionFlowView_Tests";
-			productName = "Pods-BUKCollectionFlowView_Tests";
-			productReference = F46E99786F91883B80E5104C /* Pods_BUKCollectionFlowView_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C9BDA3BB929F3E02820B7823 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B5D2C99807D682C889E7431 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView" */;
-			buildPhases = (
-				FA801BAB369382AE64478006 /* Sources */,
-				73280542DC53924337A9DCA1 /* Frameworks */,
-				47CB93218F38BAA51D0750DA /* Resources */,
+				49438D762DD9F495A7761CD7 /* Sources */,
+				3184BF78137272C54061E98D /* Frameworks */,
+				886D2C0BD35653F33A29796A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -449,16 +445,52 @@
 			);
 			name = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView";
 			productName = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView";
-			productReference = E04586098E543E1194C736CC /* BUKCollectionFlowView.bundle */;
+			productReference = 0EAD4D6AF53328706576E20C /* BUKCollectionFlowView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		E623D5DE54F424783E281BCB /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView */ = {
+		D09DA526344BA8BEC5C8E35D /* Pods-BUKCollectionFlowView_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F3C71CE7475DC5BD6D8FC75 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView" */;
+			buildConfigurationList = 6652A24027DE8E886BA73C78 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests" */;
 			buildPhases = (
-				6963072B415351B56041D2F3 /* Sources */,
-				2E98AA8DB3E6C6FA30E9DE95 /* Frameworks */,
-				B5D62635DAF8241FDCA41968 /* Resources */,
+				242C0B2CD4DDEB47D1440723 /* Sources */,
+				B95768766A7E5DC9F7F46AA0 /* Frameworks */,
+				BBCC1DA3D1FA0FA191DBF3AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD898EB7F8D3561DC0CC267F /* PBXTargetDependency */,
+			);
+			name = "Pods-BUKCollectionFlowView_Tests";
+			productName = "Pods-BUKCollectionFlowView_Tests";
+			productReference = 2F0DD8D22252DEC2A2AD98FD /* Pods_BUKCollectionFlowView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2D0D1ED202D4D9F7EA792D5 /* Pods-BUKCollectionFlowView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2F4C38E99B76F9141A7C13 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example" */;
+			buildPhases = (
+				2F3D7300B613C0B5F7390609 /* Sources */,
+				5C6484CB4087F09A1C52320D /* Frameworks */,
+				6331320DE4A8C4E16205451D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DF51BB0CDEB922B3AC6931F /* PBXTargetDependency */,
+			);
+			name = "Pods-BUKCollectionFlowView_Example";
+			productName = "Pods-BUKCollectionFlowView_Example";
+			productReference = 3EC690F5DC76175E59639772 /* Pods_BUKCollectionFlowView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBC2EA495A78DCE3A642D6BB /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1888687ABA5B9424DD8AAD /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView" */;
+			buildPhases = (
+				72B738A3452F3F5EBBBDFCB6 /* Sources */,
+				5EDD19764469C7E12CC69F9A /* Frameworks */,
+				7F892E331D3EA6D4E3705AE5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -466,278 +498,160 @@
 			);
 			name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView";
 			productName = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView";
-			productReference = 350034D72A7E0293EFB833FB /* BUKCollectionFlowView.bundle */;
+			productReference = 22A36041D0ADAFF555487F60 /* BUKCollectionFlowView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DEE4E68771AE099F3E932B1C /* Project object */ = {
+		A10D20825FC0C4EB953385BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 17A9FBE56E924C5FDCC27C4B /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = D2D4A29614E368FBE839A95F /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 862EA930C0699E8CF3283991;
-			productRefGroup = 537291F3068CD3CC5EFB4DA2 /* Products */;
+			mainGroup = 9C81271273206A88ECC167EA;
+			productRefGroup = 8B5024579A416F60F2ACA343 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A114EE0ABFD8F596E3723CFC /* Pods-BUKCollectionFlowView_Example */,
-				889736C1F6F99D6D970ADF09 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView */,
-				C9BDA3BB929F3E02820B7823 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView */,
-				C6B57AD346165F9CB85EC3B8 /* Pods-BUKCollectionFlowView_Tests */,
-				2463069CFD8C568D57423BC3 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView */,
-				E623D5DE54F424783E281BCB /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView */,
+				D2D0D1ED202D4D9F7EA792D5 /* Pods-BUKCollectionFlowView_Example */,
+				8F756E20DC1AFB905AB52678 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView */,
+				BBF70E18850E5CD61E269345 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView */,
+				D09DA526344BA8BEC5C8E35D /* Pods-BUKCollectionFlowView_Tests */,
+				7A51CD7B52C5A3EFCDDF1B6E /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView */,
+				EBC2EA495A78DCE3A642D6BB /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F21344C4BBB77ACA91695E0 /* Resources */ = {
+		7F892E331D3EA6D4E3705AE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48502CB73B7A291B931DBECE /* BUKCollectionFlowView.bundle in Resources */,
+				158D332CDE0CA738B6DFFC43 /* chat_more.png in Resources */,
+				8E38C9FA0BFAE57E0CFE1266 /* tag_delete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47CB93218F38BAA51D0750DA /* Resources */ = {
+		886D2C0BD35653F33A29796A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B1556DD5369F3BAA160571 /* chat_more.png in Resources */,
+				2FFC74F3A362DB7006252B62 /* tag_delete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61051479101EE03E96D60FC2 /* Resources */ = {
+		9CAA8B876FE68CA7F2C9E943 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50416C8D8EA0E20CBFCF9FC /* BUKCollectionFlowView.bundle in Resources */,
+				9E26620BECDBA7C6FEEA16BC /* BUKCollectionFlowView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5D62635DAF8241FDCA41968 /* Resources */ = {
+		9DE6DF4C3C89E05EDB442ED2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45735B9677C05AFC6CF4F81 /* BUKCollectionFlowView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02E5FAD1E902B68B4DB49E84 /* Sources */ = {
+		242C0B2CD4DDEB47D1440723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB287E3C0B99AAC73A6E673 /* Pods-BUKCollectionFlowView_Tests-dummy.m in Sources */,
+				D4B76612E9F2BC6138590079 /* Pods-BUKCollectionFlowView_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46B5E631A27DA80CB775459B /* Sources */ = {
+		2F3D7300B613C0B5F7390609 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E32E1E2CFCEB5915DE0F6F /* BUKCollectionFlowView.m in Sources */,
-				37F295B39A748BAF46B1E2D5 /* BUKCollectionFlowViewCell.m in Sources */,
-				5E1332B1FE9AA7B932BD1A0A /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */,
-				A499E1160646A2B9B9A3E89A /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m in Sources */,
+				081A0B8FE79DEAEDE97B472E /* Pods-BUKCollectionFlowView_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6963072B415351B56041D2F3 /* Sources */ = {
+		386A59CA8A1E38B3351FBC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC93E185B53697601CC1645 /* BUKCollectionFlowView.m in Sources */,
+				5E465F673B5FC4FE4FFB67FC /* BUKCollectionFlowViewCell.m in Sources */,
+				0D4A72BC33C8C9F832FE2EA8 /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */,
+				3891621F0479F6670C88F933 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49438D762DD9F495A7761CD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BAD82156BF5D9FB47985E5C /* Sources */ = {
+		72B738A3452F3F5EBBBDFCB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EF8ACBA1581F6FA94B36F1E /* BUKCollectionFlowView.m in Sources */,
-				05A53D1E3D8C385DE86493BD /* BUKCollectionFlowViewCell.m in Sources */,
-				6CE267080AE3E63EE8B16059 /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */,
-				10821CEF28A6A8075E9EF2D1 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C79DDB48E2114DBC15C8F1AE /* Sources */ = {
+		92384227464E267AFC85AFB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85C88BD109716AF6253608E9 /* Pods-BUKCollectionFlowView_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA801BAB369382AE64478006 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				766878FE50BC414FF373B3FE /* BUKCollectionFlowView.m in Sources */,
+				CC0399430D326DC3FD6C0A72 /* BUKCollectionFlowViewCell.m in Sources */,
+				F1D0B0BE234A324B863D98F8 /* BUKLeftAlignedCollectionViewFlowLayout.m in Sources */,
+				DD8AB8AC75A593A3312A856F /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2978E71EB707709DCBA7B80C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView";
-			target = C9BDA3BB929F3E02820B7823 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView */;
-			targetProxy = D3D1ED975985095D46FADBAB /* PBXContainerItemProxy */;
-		};
-		8F4FD1A9DCEE07567A8F6880 /* PBXTargetDependency */ = {
+		2DF51BB0CDEB922B3AC6931F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView";
-			target = 889736C1F6F99D6D970ADF09 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView */;
-			targetProxy = 6B4DFE30863649A60228370D /* PBXContainerItemProxy */;
+			target = 8F756E20DC1AFB905AB52678 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView */;
+			targetProxy = 6C0A1582DBE96D95D203255F /* PBXContainerItemProxy */;
 		};
-		9670AF6E944F0829E3356C61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView";
-			target = 2463069CFD8C568D57423BC3 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView */;
-			targetProxy = DED39CFBC9D9D27CB96CED90 /* PBXContainerItemProxy */;
-		};
-		EF3F79863202C35A7A9262EF /* PBXTargetDependency */ = {
+		944873B90B96984F27ACF64C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView";
-			target = E623D5DE54F424783E281BCB /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView */;
-			targetProxy = 92B10D67DD8C9D23C2F91B55 /* PBXContainerItemProxy */;
+			target = EBC2EA495A78DCE3A642D6BB /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView */;
+			targetProxy = 34274EA38EFC7FEDFD0982E9 /* PBXContainerItemProxy */;
+		};
+		AD898EB7F8D3561DC0CC267F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView";
+			target = 7A51CD7B52C5A3EFCDDF1B6E /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView */;
+			targetProxy = C39433B6CEFC68F4758E76AB /* PBXContainerItemProxy */;
+		};
+		DCB459BB93CFBFB29A7FE076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView";
+			target = BBF70E18850E5CD61E269345 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView */;
+			targetProxy = E751D4452C4FE9145190E356 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04E2C66FF93639F8D9A11112 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C7102BA30B8F7FB728D563 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		1DDF712EE90D7D4B5BB6F04D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C7102BA30B8F7FB728D563 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		62D6BDCCADAB51D1BE30918B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67D47E38215A3DF692370D2C /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		65DBAD89FC515151BA3DB15F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02A1BF4633BC717DE83878A9 /* Pods-BUKCollectionFlowView_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example/Pods-BUKCollectionFlowView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BUKCollectionFlowView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		660B4D4285E528BE0402B5E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67D47E38215A3DF692370D2C /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		66C109EF5DDEE8A85C0E4D64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C7102BA30B8F7FB728D563 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9E9C59D3707DC8828980BD84 /* Release */ = {
+		1BB523CBF7576A1D917E3E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -771,123 +685,11 @@
 			};
 			name = Release;
 		};
-		A1A95D737C6A327CBCC731F9 /* Release */ = {
+		22808371F1DC51A72F2B946D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C7102BA30B8F7FB728D563 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
+			baseConfigurationReference = BA45DDCFB11AAD88F45E2F50 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BA5DC9698641893C6639D5BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67D47E38215A3DF692370D2C /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BUKCollectionFlowView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BDA28474567C888E0840F4CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 950E09DB1D865DF278489E00 /* Pods-BUKCollectionFlowView_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Pods-BUKCollectionFlowView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BUKCollectionFlowView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BDC33EBC537EF44B0D7780B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B166E5A17E5417F289EAF76 /* Pods-BUKCollectionFlowView_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Pods-BUKCollectionFlowView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BUKCollectionFlowView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DC88FE9EF606ABB5EA40C475 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67D47E38215A3DF692370D2C /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Example";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = BUKCollectionFlowView;
 				SDKROOT = iphoneos;
@@ -896,9 +698,9 @@
 			};
 			name = Debug;
 		};
-		E5D191ED01CA447FD9510DB0 /* Release */ = {
+		38EAE532C5B0B76D03A73F5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75AA38739917974CF40AC52C /* Pods-BUKCollectionFlowView_Example.release.xcconfig */;
+			baseConfigurationReference = 6253E037BDA7E22072AF1C10 /* Pods-BUKCollectionFlowView_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -925,7 +727,88 @@
 			};
 			name = Release;
 		};
-		FDBE0809857BEECD72692F9E /* Debug */ = {
+		3FFDBBA681487789EC9F84A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA45DDCFB11AAD88F45E2F50 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65189823BBFCBE5DCDB284C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0033AD2E7695EE0E0CCCA8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88DEAED713A25C1CA7F3770B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0033AD2E7695EE0E0CCCA8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A54E4D0A3A84509702F6817E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -964,73 +847,226 @@
 			};
 			name = Debug;
 		};
+		AB7BFE55E71D5B670B67806B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74EE4590A77C9870D3EF23C5 /* Pods-BUKCollectionFlowView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Pods-BUKCollectionFlowView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BUKCollectionFlowView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC72CD5FCAAC29EB2BDC672A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA45DDCFB11AAD88F45E2F50 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView/Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDDC54AC5AA7B02200B5945B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA45DDCFB11AAD88F45E2F50 /* Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C84FCFE64CCAE34B4D0B8095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0033AD2E7695EE0E0CCCA8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D52D276153413FA7DD747FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8942D6DEE2B39AD0045A12 /* Pods-BUKCollectionFlowView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Tests/Pods-BUKCollectionFlowView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BUKCollectionFlowView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D75CF9713C366E022514F98C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2A2AC315490D3F2FF79877 /* Pods-BUKCollectionFlowView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BUKCollectionFlowView_Example/Pods-BUKCollectionFlowView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BUKCollectionFlowView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D762BCFC8BD780A85700E2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0033AD2E7695EE0E0CCCA8 /* Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BUKCollectionFlowView_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BUKCollectionFlowView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17A9FBE56E924C5FDCC27C4B /* Build configuration list for PBXProject "Pods" */ = {
+		2F5699202920D26DC85C4A13 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDBE0809857BEECD72692F9E /* Debug */,
-				9E9C59D3707DC8828980BD84 /* Release */,
+				88DEAED713A25C1CA7F3770B /* Debug */,
+				65189823BBFCBE5DCDB284C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19527B0A158B2A7793916E67 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView" */ = {
+		3A2F4C38E99B76F9141A7C13 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA5DC9698641893C6639D5BE /* Debug */,
-				660B4D4285E528BE0402B5E4 /* Release */,
+				D75CF9713C366E022514F98C /* Debug */,
+				38EAE532C5B0B76D03A73F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		432AA01A5031BA9D685DAB8F /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests" */ = {
+		6652A24027DE8E886BA73C78 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDC33EBC537EF44B0D7780B4 /* Debug */,
-				BDA28474567C888E0840F4CD /* Release */,
+				AB7BFE55E71D5B670B67806B /* Debug */,
+				D52D276153413FA7DD747FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EAE4C4D7D70380E0968F558 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView" */ = {
+		78FEBA37934BFE6CD16BF8E6 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				66C109EF5DDEE8A85C0E4D64 /* Debug */,
-				A1A95D737C6A327CBCC731F9 /* Release */,
+				D762BCFC8BD780A85700E2D9 /* Debug */,
+				C84FCFE64CCAE34B4D0B8095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F3C71CE7475DC5BD6D8FC75 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView" */ = {
+		AF390DF8C52E77F09EC948C6 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04E2C66FF93639F8D9A11112 /* Debug */,
-				1DDF712EE90D7D4B5BB6F04D /* Release */,
+				BC72CD5FCAAC29EB2BDC672A /* Debug */,
+				3FFDBBA681487789EC9F84A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B5D2C99807D682C889E7431 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example-BUKCollectionFlowView-BUKCollectionFlowView" */ = {
+		BC1888687ABA5B9424DD8AAD /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Tests-BUKCollectionFlowView-BUKCollectionFlowView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC88FE9EF606ABB5EA40C475 /* Debug */,
-				62D6BDCCADAB51D1BE30918B /* Release */,
+				22808371F1DC51A72F2B946D /* Debug */,
+				BDDC54AC5AA7B02200B5945B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE05449DAFDC527A15FBD767 /* Build configuration list for PBXNativeTarget "Pods-BUKCollectionFlowView_Example" */ = {
+		D2D4A29614E368FBE839A95F /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65DBAD89FC515151BA3DB15F /* Debug */,
-				E5D191ED01CA447FD9510DB0 /* Release */,
+				A54E4D0A3A84509702F6817E /* Debug */,
+				1BB523CBF7576A1D917E3E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DEE4E68771AE099F3E932B1C /* Project object */;
+	rootObject = A10D20825FC0C4EB953385BE /* Project object */;
 }

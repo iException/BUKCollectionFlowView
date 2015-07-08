@@ -14,11 +14,13 @@ typedef enum {
     BUKCollectionFlowViewTypeEditable,
 } BUKCollectionFlowViewType;
 
-@interface BUKCollectionFlowView : UICollectionView
+@interface BUKCollectionFlowView : UIView
 
 @property (nonatomic, strong) UIColor *foreColor;
 
 @property (nonatomic, strong) UIColor *lineColor;
+
+@property (nonatomic, strong) UIColor *textColor;
 
 @property (nonatomic, strong) NSArray *contents;
 
@@ -34,18 +36,18 @@ typedef enum {
 
 @property (nonatomic, assign) CGFloat width;
 
-@property (copy, nonatomic) void (^clickAction)(NSIndexPath *indexPath);
+@property (copy, nonatomic) void (^clickAction)(NSInteger index, NSString *clickItem);
+
+@property (copy, nonatomic) void (^deleteAction)(NSString *deleteItem, CGFloat heightAfterDelete);
 
 - (instancetype)initWithFrame:(CGRect)frame contentData:(NSArray *)content collectionViewType:(BUKCollectionFlowViewType)type;
 
 - (void)showCertainLines:(NSInteger)numberOfLines showMore:(BOOL)showMore moreTag:(NSString *)moreTag;
 
-- (void)showAll;
-
 - (CGFloat)getHeight;
 
 - (void)addItem:(NSString *)content;
 
-- (void)applyConfig;
+- (void)setUp;
 
 @end

@@ -10,7 +10,7 @@
 #import "BUKCollectionFlowViewCell.h"
 #import "BUKLeftAlignedCollectionViewFlowLayout.h"
 
-@interface BUKCollectionFlowView() <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface BUKCollectionFlowView()
 
 @property (nonatomic, assign) BUKCollectionFlowViewType viewType;
 
@@ -20,27 +20,24 @@
 
 @property (nonatomic, strong) NSString *moreTag;
 
-@property (nonatomic, strong) BUKLeftAlignedCollectionViewFlowLayout *layout;
-
 @end
 
 @implementation BUKCollectionFlowView
 
 - (instancetype)initWithFrame:(CGRect)frame contentData:(NSArray *)content collectionViewType:(BUKCollectionFlowViewType)type
 {
-    self = [self initWithFrame:frame collectionViewLayout:self.layout];
+    self = [self initWithFrame:frame];
     self.viewType = type;
-    
-    [self registerClass:[BUKCollectionFlowViewCell class] forCellWithReuseIdentifier:@"collectionFlowViewCell"];
     
     self.foreColor = [UIColor whiteColor];
     self.lineColor = [UIColor colorWithRed:0xf0/255.0 green:0xf0/255.0 blue:0xf0/255.0 alpha:1.0f];
+    self.textColor = [UIColor blackColor];
+    self.lineSpacing = 8;
+    self.interitemSpacing = 10;
     
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        self.contents = content;
-        self.dataSource = self;
-        self.delegate = self;
+        self.contents = [content copy];
     }
     
     return self;
@@ -51,21 +48,14 @@
     _numberOfLines = numberOfLines;
     _showMore = showMore;
     _moreTag = moreTag;
-    [self reloadData];
-}
-
-- (void)showAll
-{
-    _numberOfLines = 0;
-    [self reloadData];
+    [self reduceContentToFit];
+    [self setUp];
 }
 
 - (CGFloat)getHeight
 {
     NSInteger lineCount = 0;
-    CGSize firstTagSize = [self collectionView:self
-                                layout:_layout
-                sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    CGSize firstTagSize = [self cellSizeForIndex:0];
     CGFloat lineHeight = firstTagSize.height;
     
     if ( _numberOfLines && _numberOfLines>0 )
@@ -74,17 +64,7 @@
     } else {
         lineCount = [self getLineNumber];
     }
-    return (lineHeight+_layout.minimumInteritemSpacing)*lineCount-_layout.minimumInteritemSpacing;
-}
-
-- (void)applyConfig
-{
-    _layout.minimumLineSpacing = _lineSpacing ? _lineSpacing:8;
-    _layout.minimumInteritemSpacing = _interitemSpacing ? _interitemSpacing:10;
-    
-    self.collectionViewLayout = _layout;
-    
-    [self reloadData];
+    return (lineHeight+_interitemSpacing)*lineCount-_interitemSpacing;
 }
 
 - (void)addItem:(NSString *)content
@@ -92,39 +72,87 @@
     NSMutableArray *array = [_contents mutableCopy];
     [array addObject:content];
     _contents = [array copy];
-    [self reloadData];
+    [self setUp];
 }
 
-#pragma mark - collectionView data source
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+- (void)setUp
 {
-    if (self.clickAction) {
-        self.clickAction(indexPath);
+    for (UIView *subView in self.subviews)
+    {
+        [subView removeFromSuperview];
+    }
+    
+    __block BUKCollectionFlowViewCell *preCell = nil;
+    __block CGFloat widthSum = 0;
+    if (self.viewType == BUKCollectionFlowViewTypeEditable)
+    {
+        BUKCollectionFlowViewCell *firstCell = [self cellForIndex:0];
+        [self addSubview:firstCell];
+        firstCell.frame = CGRectMake(0, 0, [self cellSizeForIndex:0].width, [self cellSizeForIndex:0].height);
+        preCell = firstCell;
+        widthSum = [self cellSizeForIndex:0].width;
+    }
+    [_contents enumerateObjectsUsingBlock:^(NSString *tag, NSUInteger idx, BOOL *stop) {
+        BUKCollectionFlowViewCell *cell;
+        CGSize size;
+        if (self.viewType == BUKCollectionFlowViewTypeEditable)
+        {
+            cell = [self cellForIndex:idx+1];
+            size = [self cellSizeForIndex:idx+1];
+        } else {
+            cell = [self cellForIndex:idx];
+            size = [self cellSizeForIndex:idx];
+        }
+        [self addSubview:cell];
+        if ( widthSum+_lineSpacing+size.width > _width )
+        {
+            CGFloat celly = preCell.frame.origin.y + preCell.frame.size.height + _interitemSpacing;
+            cell.frame = CGRectMake(0, celly, size.width, size.height);
+            widthSum = size.width;
+        } else {
+            CGFloat cellx = preCell ? preCell.frame.origin.x + preCell.frame.size.width + _lineSpacing : 0;
+            cell.frame = CGRectMake(cellx, preCell.frame.origin.y, size.width, size.height);
+            widthSum = widthSum+_lineSpacing+size.width;
+        }
+        preCell = cell;
+    }];
+}
+
+- (void)didClickCell:(UITapGestureRecognizer *)gesture
+{
+    if ([gesture.view isKindOfClass:[BUKCollectionFlowViewCell class]])
+    {
+        BUKCollectionFlowViewCell *cell = (BUKCollectionFlowViewCell *)gesture.view;
+        NSInteger index = cell.index;
+        if (self.clickAction) {
+            if (self.viewType == BUKCollectionFlowViewTypeEditable) {
+                self.clickAction(index, index==0 ? nil:[self safeObjectAtIndexInContents:index-1]);
+            } else {
+                self.clickAction(index, [self safeObjectAtIndexInContents:index]);
+            }
+        }
     }
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (BUKCollectionFlowViewCell *)cellForIndex:(NSInteger)index;
 {
-    BUKCollectionFlowViewCell *cell = [self dequeueReusableCellWithReuseIdentifier:@"collectionFlowViewCell"
-                                                                     forIndexPath:indexPath];
-    cell.indexPath = indexPath;
+    BUKCollectionFlowViewCell *cell = [[BUKCollectionFlowViewCell alloc] init];
     switch (self.viewType) {
         case BUKCollectionFlowViewTypeNormal:
-            [cell fillWithContent:[self safeObjectAtIndexInContents:indexPath.row]
+            [cell fillWithContent:[self safeObjectAtIndexInContents:index]
                          cellType:BUKCollectionFlowViewCellTypeNormal];
             break;
             
         case BUKCollectionFlowViewTypeDeletable:
-            [cell fillWithContent:[self safeObjectAtIndexInContents:indexPath.row]
+            [cell fillWithContent:[self safeObjectAtIndexInContents:index]
                          cellType:BUKCollectionFlowViewCellTypeDeletable];
             break;
             
         case BUKCollectionFlowViewTypeEditable:
-            if (indexPath.row==0) {
+            if (index==0) {
                 [cell fillWithContent:nil cellType:BUKCollectionFlowViewCellTypeAdd];
             } else {
-                [cell fillWithContent:[self safeObjectAtIndexInContents:indexPath.row-1]
+                [cell fillWithContent:[self safeObjectAtIndexInContents:index-1]
                              cellType:BUKCollectionFlowViewCellTypeDeletable];
             }
             break;
@@ -132,40 +160,42 @@
         default:
             break;
     }
-    
     cell.backgroundColor = self.foreColor;
     cell.layer.cornerRadius = 5;
     cell.layer.masksToBounds = YES;
     cell.layer.borderWidth = 1.0;
     cell.layer.borderColor = self.lineColor.CGColor;
+    cell.index = index;
     cell.label.font = _font ? _font:[UIFont systemFontOfSize:17];
-    [cell.deleteButton setImage:_tagDeleteIcon forState:UIControlStateNormal];
-    [cell.addButton setImage:_tagAddIcon forState:UIControlStateNormal];
-    [cell setDeleteAction:^(NSIndexPath *indexPath) {
-        [self didDeleteButtonClick:indexPath];
+    cell.label.textColor = _textColor;
+    if (_tagDeleteIcon)
+    {
+        [cell.deleteButton setImage:_tagDeleteIcon forState:UIControlStateNormal];
+    }
+    if (_tagAddIcon)
+    {
+        [cell.addButton setImage:_tagAddIcon forState:UIControlStateNormal];
+    }
+    [cell setDeleteAction:^(NSInteger index) {
+        [self didDeleteButtonClick:index];
+        if (self.deleteAction)
+        {
+            if (self.viewType == BUKCollectionFlowViewTypeEditable) {
+                self.deleteAction([self safeObjectAtIndexInContents:index-1], [self getHeight]);
+            } else {
+                self.deleteAction([self safeObjectAtIndexInContents:index], [self getHeight]);
+            }
+        }
     }];
+    
+    cell.userInteractionEnabled = YES;
+    UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickCell:)];
+    [cell addGestureRecognizer:singleTap];
     
     return cell;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 1;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    if ( _numberOfLines || _numberOfLines>0 ) {
-        [self reduceContentToFit];
-    }
-    if (self.contents){
-        return self.viewType==BUKCollectionFlowViewTypeEditable ? [self.contents count]+1:[self.contents count];
-    } else {
-        return self.viewType==BUKCollectionFlowViewTypeEditable ? 1:0;
-    }
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+- (CGSize)cellSizeForIndex:(NSInteger)index
 {
     if (!self.contents || self.contents.count == 0) {
         return CGSizeMake(0, 0);
@@ -175,7 +205,7 @@
     if (_font) {
         label.font = _font;
     }
-    label.text = [self safeObjectAtIndexInContents:indexPath.row];
+    label.text = [self safeObjectAtIndexInContents:index];
     CGSize labelSize = [label systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     
     CGFloat itemWidth = labelSize.width+20;
@@ -190,10 +220,10 @@
             break;
             
         case BUKCollectionFlowViewTypeEditable:
-            if (indexPath.row==0) {
+            if (index==0) {
                 itemWidth = itemHeight;
             } else {
-                label.text = [self safeObjectAtIndexInContents:indexPath.row-1];
+                label.text = [self safeObjectAtIndexInContents:index-1];
                 CGSize labelSize = [label systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
                 
                 itemWidth = labelSize.width+labelSize.height+20;
@@ -210,23 +240,23 @@
 
 #pragma mark - block method
 
-- (void)didDeleteButtonClick:(NSIndexPath *)indexPath
+- (void)didDeleteButtonClick:(NSInteger)index
 {
     NSMutableArray *array = [_contents mutableCopy];
     switch (self.viewType) {
         case BUKCollectionFlowViewTypeDeletable:
-            [array removeObjectAtIndex:indexPath.row];
+            [array removeObjectAtIndex:index];
             break;
             
         case BUKCollectionFlowViewTypeEditable:
-            [array removeObjectAtIndex:indexPath.row-1];
+            [array removeObjectAtIndex:index-1];
             break;
             
         default:
             break;
     }
     _contents = [array copy];
-    [self reloadData];
+    [self setUp];
 }
 
 - (void)reduceContentToFit
@@ -234,13 +264,11 @@
     NSInteger count = 0;
     CGFloat widthSum = 0;
     
-    CGSize firstTagSize = [self collectionView:self
-                                layout:_layout
-                sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    CGSize firstTagSize = [self cellSizeForIndex:0];
     
     CGSize selfFitSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     
-    if ( selfFitSize.height+_layout.minimumInteritemSpacing >= (firstTagSize.height+_layout.minimumInteritemSpacing)*_numberOfLines )
+    if ( selfFitSize.height+_interitemSpacing >= (firstTagSize.height+_interitemSpacing)*_numberOfLines )
     {
         return;
     }
@@ -248,14 +276,12 @@
     for (int i=1; i<_numberOfLines; i++)
     {
         widthSum = 0;
-        while ( widthSum <= _width && count<[_contents count]){
-            CGSize size = [self collectionView:self
-                                        layout:_layout
-                        sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:count inSection:0]];
-            widthSum = widthSum+size.width+_layout.minimumLineSpacing;
+        while ( widthSum <= _width+_lineSpacing && count<[_contents count]){
+            CGSize size = [self cellSizeForIndex:count];
+            widthSum = widthSum+size.width+_lineSpacing;
             count++;
         }
-        if (widthSum > _width)
+        if (widthSum > _width+_lineSpacing)
         {
             count--;
         } else {
@@ -270,32 +296,27 @@
         label.text = _moreTag;
         CGSize labelSize = [label systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
         
-        widthSum = labelSize.width+20+_layout.minimumLineSpacing;
+        widthSum = labelSize.width+20+_lineSpacing;
     } else {
         widthSum = 0;
     }
-    while ( widthSum <= _width && count<[_contents count]){
-        CGSize size = [self collectionView:self
-                                    layout:_layout
-                    sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:count inSection:0]];
-        widthSum = widthSum+size.width+_layout.minimumLineSpacing;
+    while ( widthSum <= _width+_lineSpacing && count<[_contents count]){
+        CGSize size = [self cellSizeForIndex:count];
+        widthSum = widthSum+size.width+_lineSpacing;
         count++;
     }
-    if (widthSum > _width)
+    if (widthSum > _width+_lineSpacing)
     {
         count--;
     } else {
         return;
     }
     NSMutableArray *array = [_contents mutableCopy];
-    switch (self.viewType) {
-        case BUKCollectionFlowViewTypeEditable:
-            [array removeObjectsInRange:NSMakeRange(count-1, [_contents count]-count+1)];
-            break;
-            
-        default:
-            [array removeObjectsInRange:NSMakeRange(count, [_contents count]-count)];
-            break;
+    if( self.viewType == BUKCollectionFlowViewTypeEditable)
+    {
+        [array removeObjectsInRange:NSMakeRange(count-1, [_contents count]-count+1)];
+    } else {
+        [array removeObjectsInRange:NSMakeRange(count, [_contents count]-count)];
     }
     if (_showMore)
     {
@@ -313,14 +334,17 @@
     {
         lineCount++;
         widthSum = 0;
-        while ( widthSum <= _width && count<[_contents count]){
-            CGSize size = [self collectionView:self
-                                        layout:_layout
-                        sizeForItemAtIndexPath:[NSIndexPath indexPathForRow:count inSection:0]];
-            widthSum = widthSum+size.width+_layout.minimumLineSpacing;
+        if ( !_width || _width==0 )
+        {
+            return 0;
+        }
+        while ( widthSum <= _width+_lineSpacing
+               && count<(self.viewType==BUKCollectionFlowViewTypeEditable? [_contents count]+1:[_contents count]) ){
+            CGSize size = [self cellSizeForIndex:count];
+            widthSum = widthSum+size.width+_lineSpacing;
             count++;
         }
-        if (widthSum > _width)
+        if ( widthSum > _width+_lineSpacing )
         {
             count--;
         } else {
@@ -351,17 +375,12 @@
     return object;
 }
 
-#pragma mark - getter & setter -
+#pragma mark - getter & setter - 
 
-- (BUKLeftAlignedCollectionViewFlowLayout *)layout
+- (void)setContents:(NSArray *)contents
 {
-    if ( !_layout )
-    {
-        _layout = [[BUKLeftAlignedCollectionViewFlowLayout alloc] init];
-        _layout.minimumLineSpacing = 8;
-        _layout.minimumInteritemSpacing = 10;
-    }
-    return _layout;
+    _contents = [contents copy];
+    [self setUp];
 }
 
 @end
