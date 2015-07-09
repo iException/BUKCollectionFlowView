@@ -19,10 +19,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     _collectionFlowView = [[BUKCollectionFlowView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 200) contentData:@[@"aaa",@"aaaaaaa",@"aaaaa",@"aaaaaa",@"aaaaaaaa"] collectionViewType:BUKCollectionFlowViewTypeEditable];
-    _collectionFlowView.width = [UIScreen mainScreen].bounds.size.width;
+//    _collectionFlowView.width = [UIScreen mainScreen].bounds.size.width;
     [self.view addSubview:_collectionFlowView];
-//    [_collectionFlowView showCertainLines:2 showMore:NO moreTag:@"更多..."];
-    [_collectionFlowView setUp];
+    [_collectionFlowView showCertainLines:2 showMore:NO moreTag:@"更多..."];
+//    [_collectionFlowView setUp];
     NSLog(@"%f",[_collectionFlowView getHeight]);
     [_collectionFlowView setDeleteAction:^(NSString *deleteItem, CGFloat heightAfterDelete){
         NSLog(@"%f", heightAfterDelete);

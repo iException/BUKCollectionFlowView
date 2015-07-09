@@ -77,6 +77,11 @@
 
 - (void)setUp
 {
+    if ( _width==0 && self.frame.size.width==0 )
+    {
+        return;
+    }
+    
     for (UIView *subView in self.subviews)
     {
         [subView removeFromSuperview];
@@ -84,6 +89,7 @@
     
     __block BUKCollectionFlowViewCell *preCell = nil;
     __block CGFloat widthSum = 0;
+    _width = _width==0 ? self.frame.size.width : _width;
     if (self.viewType == BUKCollectionFlowViewTypeEditable)
     {
         BUKCollectionFlowViewCell *firstCell = [self cellForIndex:0];
@@ -201,6 +207,17 @@
 
 - (CGSize)cellSizeForIndex:(NSInteger)index
 {
+    if ( self.viewType==BUKCollectionFlowViewTypeEditable && index==0 )
+    {
+        UILabel *label = [[UILabel alloc] init];
+        if (_font) {
+            label.font = _font;
+        }
+        label.text = @"啊";
+        CGSize labelSize = [label systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        return CGSizeMake(labelSize.height+10, labelSize.height+10);
+    }
+    
     if (!self.contents || self.contents.count == 0) {
         return CGSizeMake(0, 0);
     }
