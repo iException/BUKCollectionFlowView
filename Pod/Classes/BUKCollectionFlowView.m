@@ -120,6 +120,13 @@
             cell.frame = CGRectMake(0, celly, size.width, size.height);
             widthSum = size.width;
         } else {
+            if (self.enableSeperator && preCell) {
+                CGFloat height = cell.label.font.lineHeight * 0.8;
+                UIView *line = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(preCell.frame)+_lineSpacing/2.0, CGRectGetMidY(preCell.frame) - height/2.0, 1, height)];
+                line.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+                [self addSubview:line];
+            }
+
             CGFloat cellx = preCell ? preCell.frame.origin.x + preCell.frame.size.width + _lineSpacing : 0;
             cell.frame = CGRectMake(cellx, preCell.frame.origin.y, size.width, size.height);
             widthSum = widthSum+_lineSpacing+size.width;

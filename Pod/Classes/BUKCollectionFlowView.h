@@ -36,6 +36,8 @@ typedef enum {
 
 @property (nonatomic, assign) CGFloat width;
 
+@property (nonatomic, assign) BOOL enableSeperator;
+
 @property (copy, nonatomic) void (^clickAction)(NSInteger index, NSString *clickItem);
 
 @property (copy, nonatomic) void (^deleteAction)(NSInteger index, NSString *deleteItem);
