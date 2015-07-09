@@ -38,7 +38,7 @@ typedef enum {
 
 @property (copy, nonatomic) void (^clickAction)(NSInteger index, NSString *clickItem);
 
-@property (copy, nonatomic) void (^deleteAction)(NSString *deleteItem, CGFloat heightAfterDelete);
+@property (copy, nonatomic) void (^deleteAction)(NSInteger index, NSString *deleteItem);
 
 - (instancetype)initWithFrame:(CGRect)frame contentData:(NSArray *)content collectionViewType:(BUKCollectionFlowViewType)type;
 

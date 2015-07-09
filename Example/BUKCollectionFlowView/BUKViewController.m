@@ -23,9 +23,8 @@
     [self.view addSubview:_collectionFlowView];
     [_collectionFlowView showCertainLines:2 showMore:NO moreTag:@"更多..."];
 //    [_collectionFlowView setUp];
-    NSLog(@"%f",[_collectionFlowView getHeight]);
-    [_collectionFlowView setDeleteAction:^(NSString *deleteItem, CGFloat heightAfterDelete){
-        NSLog(@"%f", heightAfterDelete);
+    [_collectionFlowView setDeleteAction:^(NSInteger index, NSString *deleteItem){
+//        NSLog(@"%f", [_collectionFlowView getHeight]);
     }];
     __weak typeof(BUKCollectionFlowView) *weakCollectionView = _collectionFlowView;
     [_collectionFlowView setClickAction:^(NSInteger index, NSString *clickItem) {

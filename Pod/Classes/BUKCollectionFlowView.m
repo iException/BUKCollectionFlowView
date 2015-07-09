@@ -191,9 +191,9 @@
         if (self.deleteAction)
         {
             if (self.viewType == BUKCollectionFlowViewTypeEditable) {
-                self.deleteAction([self safeObjectAtIndexInContents:index-1], [self getHeight]);
+                self.deleteAction(index, [self safeObjectAtIndexInContents:index-1]);
             } else {
-                self.deleteAction([self safeObjectAtIndexInContents:index], [self getHeight]);
+                self.deleteAction(index, [self safeObjectAtIndexInContents:index]);
             }
         }
     }];

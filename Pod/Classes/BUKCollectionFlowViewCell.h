@@ -14,7 +14,7 @@ typedef enum {
     BUKCollectionFlowViewCellTypeAdd,
 } BUKCollectionFlowViewCellType;
 
-@interface BUKCollectionFlowViewCell : UICollectionViewCell
+@interface BUKCollectionFlowViewCell : UIView
 
 @property (nonatomic, assign) NSInteger index;
 
