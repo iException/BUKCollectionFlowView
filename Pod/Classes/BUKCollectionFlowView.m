@@ -27,15 +27,16 @@
 - (instancetype)initWithFrame:(CGRect)frame contentData:(NSArray *)content collectionViewType:(BUKCollectionFlowViewType)type
 {
     self = [self initWithFrame:frame];
-    self.viewType = type;
-    
-    self.foreColor = [UIColor whiteColor];
-    self.lineColor = [UIColor colorWithRed:0xf0/255.0 green:0xf0/255.0 blue:0xf0/255.0 alpha:1.0f];
-    self.textColor = [UIColor blackColor];
-    self.lineSpacing = 8;
-    self.interitemSpacing = 10;
     
     if (self) {
+        self.viewType = type;
+        
+        self.foreColor = [UIColor whiteColor];
+        self.lineColor = [UIColor colorWithRed:0xf0/255.0 green:0xf0/255.0 blue:0xf0/255.0 alpha:1.0f];
+        self.textColor = [UIColor blackColor];
+        self.lineSpacing = 8;
+        self.interitemSpacing = 10;
+        
         self.backgroundColor = [UIColor clearColor];
         _contents = [content copy];
     }
