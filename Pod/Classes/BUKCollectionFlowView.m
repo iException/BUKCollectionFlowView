@@ -27,15 +27,16 @@
 - (instancetype)initWithFrame:(CGRect)frame contentData:(NSArray *)content collectionViewType:(BUKCollectionFlowViewType)type
 {
     self = [self initWithFrame:frame];
-    self.viewType = type;
-    
-    self.foreColor = [UIColor whiteColor];
-    self.lineColor = [UIColor colorWithRed:0xf0/255.0 green:0xf0/255.0 blue:0xf0/255.0 alpha:1.0f];
-    self.textColor = [UIColor blackColor];
-    self.lineSpacing = 8;
-    self.interitemSpacing = 10;
     
     if (self) {
+        self.viewType = type;
+        
+        self.foreColor = [UIColor whiteColor];
+        self.lineColor = [UIColor colorWithRed:0xf0/255.0 green:0xf0/255.0 blue:0xf0/255.0 alpha:1.0f];
+        self.textColor = [UIColor blackColor];
+        self.lineSpacing = 8;
+        self.interitemSpacing = 10;
+        
         self.backgroundColor = [UIColor clearColor];
         _contents = [content copy];
     }
@@ -120,6 +121,13 @@
             cell.frame = CGRectMake(0, celly, size.width, size.height);
             widthSum = size.width;
         } else {
+            if (self.enableSeperator && preCell) {
+                CGFloat height = cell.label.font.lineHeight * 0.8;
+                UIView *line = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(preCell.frame)+_lineSpacing/2.0, CGRectGetMidY(preCell.frame) - height/2.0, 1, height)];
+                line.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+                [self addSubview:line];
+            }
+
             CGFloat cellx = preCell ? preCell.frame.origin.x + preCell.frame.size.width + _lineSpacing : 0;
             cell.frame = CGRectMake(cellx, preCell.frame.origin.y, size.width, size.height);
             widthSum = widthSum+_lineSpacing+size.width;
