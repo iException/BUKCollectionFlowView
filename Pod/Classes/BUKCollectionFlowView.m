@@ -59,12 +59,8 @@
     CGSize firstTagSize = [self cellSizeForIndex:0];
     CGFloat lineHeight = firstTagSize.height;
     
-    if ( _numberOfLines && _numberOfLines>0 )
-    {
-        lineCount = _numberOfLines;
-    } else {
-        lineCount = [self getLineNumber];
-    }
+    lineCount = [self getLineNumber];
+    
     return (lineHeight+_interitemSpacing)*lineCount-_interitemSpacing;
 }
 
@@ -295,9 +291,7 @@
     
     CGSize firstTagSize = [self cellSizeForIndex:0];
     
-    CGSize selfFitSize = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-    
-    if ( selfFitSize.height+_interitemSpacing >= (firstTagSize.height+_interitemSpacing)*_numberOfLines )
+    if ( [self getHeight]+_interitemSpacing <= (firstTagSize.height+_interitemSpacing)*_numberOfLines )
     {
         return;
     }
@@ -329,7 +323,7 @@
     } else {
         widthSum = 0;
     }
-    while ( widthSum <= _width+_lineSpacing && count<[_contents count]){
+    while ( widthSum <= _width+_lineSpacing && count<(self.viewType == BUKCollectionFlowViewTypeEditable? [_contents count]+1:[_contents count])){
         CGSize size = [self cellSizeForIndex:count];
         widthSum = widthSum+size.width+_lineSpacing;
         count++;
@@ -359,6 +353,7 @@
     NSInteger count = 0;
     CGFloat widthSum = 0;
     NSInteger lineCount = 0;
+    _width = _width==0 ? self.frame.size.width : _width;
     while ( _width && _width>=[self cellSizeForIndex:count].width )
     {
         lineCount++;
