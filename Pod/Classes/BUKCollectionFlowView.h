@@ -51,6 +51,8 @@ typedef enum {
 
 - (void)addItem:(NSString *)content;
 
+- (void)deleteItem:(NSString *)content;
+
 - (void)setUp;
 
 @end

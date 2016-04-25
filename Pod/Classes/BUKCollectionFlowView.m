@@ -76,6 +76,14 @@
     [self setUp];
 }
 
+- (void)deleteItem:(NSString *)content
+{
+    NSMutableArray *array = [_contents mutableCopy];
+    [array removeObject:content];
+    _contents = [array copy];
+    [self setup];
+}
+
 - (void)setUp
 {
     if ( _width==0 && self.frame.size.width==0 )
