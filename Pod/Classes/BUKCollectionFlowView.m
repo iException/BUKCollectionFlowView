@@ -199,15 +199,13 @@
         [cell.addButton setImage:_tagAddIcon forState:UIControlStateNormal];
     }
     [cell setDeleteAction:^(NSInteger index) {
+        NSUInteger realIndex = self.viewType == BUKCollectionFlowViewTypeEditable? index -1 : index;
+        NSString *content = [self safeObjectAtIndexInContents:realIndex];
+        [self didDeleteButtonClick:realIndex];
         if (self.deleteAction)
         {
-            if (self.viewType == BUKCollectionFlowViewTypeEditable) {
-                self.deleteAction(index, [self safeObjectAtIndexInContents:index-1]);
-            } else {
-                self.deleteAction(index, [self safeObjectAtIndexInContents:index]);
-            }
+            self.deleteAction(realIndex, content);
         }
-        [self didDeleteButtonClick:index];
     }];
     
     cell.userInteractionEnabled = YES;
@@ -276,19 +274,9 @@
 - (void)didDeleteButtonClick:(NSInteger)index
 {
     NSMutableArray *array = [_contents mutableCopy];
-    switch (self.viewType) {
-        case BUKCollectionFlowViewTypeDeletable:
-            [array removeObjectAtIndex:index];
-            break;
-            
-        case BUKCollectionFlowViewTypeEditable:
-            [array removeObjectAtIndex:index-1];
-            break;
-            
-        default:
-            break;
-    }
+    [array removeObjectAtIndex:index];
     _contents = [array copy];
+
     [self setUp];
 }
 
