@@ -77,7 +77,7 @@
     NSMutableArray *array = [_contents mutableCopy];
     [array removeObject:content];
     _contents = [array copy];
-    [self setup];
+    [self setUp];
 }
 
 - (void)setUp
