@@ -199,7 +199,6 @@
         [cell.addButton setImage:_tagAddIcon forState:UIControlStateNormal];
     }
     [cell setDeleteAction:^(NSInteger index) {
-        [self didDeleteButtonClick:index];
         if (self.deleteAction)
         {
             if (self.viewType == BUKCollectionFlowViewTypeEditable) {
@@ -208,6 +207,7 @@
                 self.deleteAction(index, [self safeObjectAtIndexInContents:index]);
             }
         }
+        [self didDeleteButtonClick:index];
     }];
     
     cell.userInteractionEnabled = YES;
