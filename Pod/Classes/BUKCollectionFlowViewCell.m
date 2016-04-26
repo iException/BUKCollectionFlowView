@@ -36,8 +36,8 @@
                                                                  attribute:NSLayoutAttributeHeight
                                                                 multiplier:1.0
                                                                   constant:0]];
-                [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_label]-0-[_deleteButton]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_label,_deleteButton)]];
-                [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_deleteButton]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_deleteButton)]];
+                [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_label]-4-[_deleteButton]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_label,_deleteButton)]];
+                [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-3-[_deleteButton]-3-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_deleteButton)]];
                 break;
                 
             case BUKCollectionFlowViewCellTypeAdd:
