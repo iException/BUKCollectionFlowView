@@ -119,7 +119,7 @@
             size = [self cellSizeForIndex:idx];
         }
         [self addSubview:cell];
-        if ( widthSum+_lineSpacing+size.width > _width )
+        if ( widthSum+size.width > _width )
         {
             CGFloat celly = preCell ? preCell.frame.origin.y + preCell.frame.size.height + _interitemSpacing : 0;
             cell.frame = CGRectMake(0, celly, size.width, size.height);
