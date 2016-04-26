@@ -34,8 +34,6 @@ typedef enum {
 
 @property (nonatomic, strong) UIFont *font;
 
-@property (nonatomic, assign) CGFloat width;
-
 @property (nonatomic, assign) BOOL enableSeperator;
 
 @property (copy, nonatomic) void (^clickAction)(NSInteger index, NSString *clickItem);
